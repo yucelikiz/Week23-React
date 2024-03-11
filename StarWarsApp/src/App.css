@@ -1,0 +1,62 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background: linear-gradient(to bottom right, #3f0c1a, #000033);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.logo {
+  width: 300px;
+  height: 150px;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+.spaceship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.spaceship-card {
+  background: linear-gradient(to bottom right, #000033, #000022);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spaceship-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.info {
+  text-align: left;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .spaceship-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
